@@ -1,0 +1,22 @@
+// -----------------------------------------------------------------------------
+// Logo component
+// -----------------------------------------------------------------------------
+
+.logo-link {
+  height: 35px;
+  @media (min-width: $bp-medium) {
+    height: 50px;
+  }
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  fill: $clr-primary;
+
+  @media (min-width: $bp-medium) {
+    width: 50px;
+    height: 50px;
+  }
+}
+

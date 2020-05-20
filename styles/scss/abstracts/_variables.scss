@@ -1,0 +1,77 @@
+// -----------------------------------------------------------------------------
+// Application-wide Sass/CSS variables.
+// -----------------------------------------------------------------------------
+
+//
+// Font stacks
+// ==========================================================================
+// Headings, buttons and links
+$ff-primary: 'PT Sans', serif;
+// Body copy
+$ff-secondary: 'Bitter', sans-serif;
+
+
+
+// Brand colors
+// ==========================================================================
+// Primary blue - logos, Buttons
+$clr-primary: hsl(217, 35%, 22%);
+
+// Secondary blue - active states
+$clr-secondary: hsl(195, 32%, 47%);
+
+
+// Font colors
+// ==========================================================================
+// Dark blue - headers, button text
+$clr-font-dark: hsl(210, 41%, 11%);
+
+// Medium grey - body copy
+$clr-font-mid: hsl(215, 11%, 34%);
+
+// Light grey - decorations
+$clr-light-grey: hsl(170, 4%, 74%);
+
+
+// Background colors
+// ==========================================================================
+// Black Blue - footer background
+$clr-black-blue: hsl(219, 50%, 8%);
+
+// White - main background
+$clr-white: hsl(0, 0%, 100%);
+
+
+
+
+
+// Container's maximum width
+$max-width: 1110px;
+
+
+
+
+
+// Breakpoints
+  $bp-small: 320px;
+  $bp-medium: 768px;
+  $bp-large: 1024px;
+
+
+// Transitions
+$transition: 200ms ease-in;
+
+
+
+// Box-shadows
+$bs-main:
+  0 0.4px 0.7px rgba(0, 0, 0, 0.035),
+  0 1.1px 1.9px rgba(0, 0, 0, 0.05),
+  0 2.7px 4.5px rgba(0, 0, 0, 0.065),
+  0 9px 15px rgba(0, 0, 0, 0.1);
+
+$bs-active:
+  0 0.7px 2.6px rgba(0, 0, 0, 0.035),
+  0 1.9px 7.1px rgba(0, 0, 0, 0.05),
+  0 4.5px 17.2px rgba(0, 0, 0, 0.065),
+  0 15px 57px rgba(0, 0, 0, 0.1);

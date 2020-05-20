@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// Header styles & layout
+// -----------------------------------------------------------------------------
+
+// Layout
+.nav {
+  @include flex;
+
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+//
+// Mobile Nav toggle classes
+// ==========================================================================
+
+.nav__hamburger {
+  background: url(../../../images/menu.svg);
+  fill: $clr-black-blue;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+
+  // Toggled when hamburger clicked
+  &--active {
+    background-image: url(../../../images/close.svg)
+  }
+}
+
+
+// Main nav links styled for mobile menu first
+.nav__main-nav {
+  background: $clr-primary;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  visibility: hidden;
+
+  width: 100%;
+
+  transform: translateY(-70%);
+  transition: transform $transition;
+  
+
+  & li {
+    border-top: 1px solid $clr-white;
+  }
+  
+
+  & .main-nav__link {
+    color: $clr-white;
+    font-size: 1.125rem;
+
+    display: inline-block;
+    width: 100%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+
+  // Toggled when hamburger clicked
+  &--active {
+    visibility: visible;
+    transform: translateY(130px);
+  }
+}
+
+
+// Modal background
+.modal {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9) ) ;
+  opacity: 0;
+
+  z-index: -999;
+
+  transition: opacity $transition;
+
+
+  // Toggled when hamburger clicked
+  &--active {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 67px;
+    bottom: 0;
+    z-index: 0;
+
+    opacity: 1;
+  }
+}
+
+
+//
+// Medium+ screens - new Nav-main layout and styles
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+
+  .nav {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+
+  .nav__hamburger {
+    display: none;
+  }
+
+
+  .nav__main-nav {
+    background: none;
+    width: initial;
+    position: static;
+    visibility: visible;
+    transform: none;
+    
+
+    & li {
+      display: inline-block;
+
+      // 1.
+      @include on-event {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+
+    & li:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+
+    & .main-nav__link {
+      color: $clr-font-mid;
+      font-size: 1rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+
+      @include on-event {
+        color: $clr-secondary;
+      }
+    }
+  }
+
+  
+  // Link underline (1. Animated on event)
+  .nav__main-nav li::after {
+      content: "";
+      position: relative;
+      display: block;
+      left: 0;
+      top: 0;
+      background: $clr-secondary;
+      width: 0;
+      height: 2px;
+      transition: $transition;
+  }
+}

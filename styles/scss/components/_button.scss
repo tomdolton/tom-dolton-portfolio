@@ -1,0 +1,59 @@
+// -----------------------------------------------------------------------------
+// Button component
+// -----------------------------------------------------------------------------
+
+// Read about this:
+// @link https://moderncss.dev/css-button-styling-guide/
+
+.btn {
+  // Display
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start; // Optional - see "Gotchas"
+  
+  // Visual
+  background-color: $clr-primary;
+  color: $clr-white;
+  border-radius: 1px;
+  box-shadow: $bs-main;
+  
+  // Size
+  border: 2px $clr-primary solid;
+  padding: 17px 58px;
+ 
+  
+  // Text
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  line-height: 1.1;
+  text-align: center;
+
+  transition: color $transition,
+              background-color $transition;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+    color: $clr-primary;
+    box-shadow: $bs-active;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px $clr-secondary;
+  }
+}
+
+
+.btn--secondary {
+  background-color: transparent;
+  color: $clr-primary;
+
+  &:hover,
+  &:active {
+    background-color: $clr-primary;
+    color: $clr-white;
+  }
+}

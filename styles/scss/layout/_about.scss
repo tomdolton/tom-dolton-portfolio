@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// About styles & layout
+// -----------------------------------------------------------------------------
+
+.about__image {
+  border: 1px solid $clr-light-grey;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  // width: 50%;
+  // height: 50%;
+}
+
+
+.about__title, .about__copy {
+  margin-bottom: 2rem;
+}
+
