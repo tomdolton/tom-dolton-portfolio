@@ -11,6 +11,7 @@
   padding-bottom: 1rem;
 }
 
+
 //
 // Mobile Nav toggle classes
 // ==========================================================================
@@ -38,6 +39,7 @@
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 2;
 
   visibility: hidden;
 
@@ -52,7 +54,7 @@
   }
   
 
-  & .main-nav__link {
+  & a {
     color: $clr-white;
     font-size: 1.125rem;
 
@@ -88,7 +90,7 @@
     right: 0;
     top: 67px;
     bottom: 0;
-    z-index: 0;
+    z-index: 1;
 
     opacity: 1;
   }
@@ -165,10 +167,10 @@
 }
 
 
-
 //
 // Large screens 
 // ==========================================================================
+
 @media (min-width: $bp-large) {
 
     .nav {
