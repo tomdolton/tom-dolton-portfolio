@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// Contact styles & layout
+// -----------------------------------------------------------------------------
+
+.contact {
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+
+.contact__title::after {
+  content: "";
+  display: block;
+  background: $clr-light-grey;
+  width: 2px;
+  height: 5rem;
+  margin: 1rem auto;
+}
+
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+
+  .contact {
+    @include flex;
+    padding-bottom: 5rem;
+  }
+
+
+  .contact__title::after {
+    width: calc(100% - 220px - 220px - 4rem);
+    height: 2px;
+    margin: 0 auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 0;
+  }
+}
+
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+
+    .contact {
+      padding-bottom: 6rem;
+    }
+
+}
+
+
+
+
+
+
+

@@ -43,23 +43,21 @@ $clr-white: hsl(0, 0%, 100%);
 
 
 
-
-
-// Container's maximum width
-$max-width: 1110px;
-
-
+// Container's maximum width (+ side padding)
+$max-width: 1180px;
 
 
 
 // Breakpoints
-  $bp-small: 320px;
-  $bp-medium: 768px;
-  $bp-large: 1024px;
+$bp-small: 320px;
+$bp-medium: 768px;
+$bp-large: 1024px;
+
 
 
 // Transitions
 $transition: 200ms ease-in;
+$transition-fast: 100ms ease-in;
 
 
 

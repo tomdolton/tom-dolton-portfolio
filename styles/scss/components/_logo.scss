@@ -2,21 +2,29 @@
 // Logo component
 // -----------------------------------------------------------------------------
 
+// anchor container for logos
 .logo-link {
   height: 35px;
+
   @media (min-width: $bp-medium) {
     height: 50px;
   }
 }
 
+
+// SVG
 .logo {
   width: 35px;
   height: 35px;
-  fill: $clr-primary;
+  fill: $clr-black-blue;
 
   @media (min-width: $bp-medium) {
     width: 50px;
     height: 50px;
+  }
+
+  &--white {
+    fill: $clr-white;
   }
 }
 

@@ -16,17 +16,22 @@
   'base/typography',
   'base/utility';
 
-// 4. Layout-related sections
+  
+  // 4. Components
+  @import
+  'components/logo',
+  'components/main-nav',
+  'components/button';
+
+
+// 5. Layout-related sections
 @import
   'layout/nav',
   'layout/hero',
   'layout/about',
+  'layout/contact',
   'layout/footer';
 
-// 5. Components
-@import
-  'components/logo',
-  'components/button';
 
 // 6. Page-specific styles
 @import

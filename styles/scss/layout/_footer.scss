@@ -3,7 +3,96 @@
 // -----------------------------------------------------------------------------
 
 
+.footer {
+  background: $clr-black-blue;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+
+.footer__main-nav {
+  margin-bottom: 2rem;
+}
+
+
+.footer__main-nav a {
+  color: $clr-light-grey;
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: $transition-fast;
+
+  @include on-event {
+    color: $clr-white;
+  }
+}
+
+
 .github-icon {
-  width: 20px;
-  height: 20px;
+  fill: $clr-light-grey;
+  width: 30px;
+  height: 30px;
+  transition: $transition;
+
+  @include on-event {
+    fill: $clr-white;
+  }
+}
+
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+
+  .footer .container {
+    @include flex;
+  }
+
+
+  .footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+
+  .footer__main-nav,
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
+
+  .footer__main-nav {
+
+    @include flex;
+    margin-left: 3rem;
+    margin-right: auto;
+
+    & a {
+      margin-bottom: 0;
+    }
+
+    
+    & li:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+
+  .footer__logo,
+  .footer__logo-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  .github-icon {
+    width: 35px;
+    height: 35px;
+  }
 }

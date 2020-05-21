@@ -57,3 +57,27 @@
     color: $clr-white;
   }
 }
+
+
+// SVG arrows used in hero button
+.btn__down-arrow {
+  fill: $clr-white;
+  height: 0.8rem;
+  width: 0.8rem;
+  transition: $transition;
+
+  &:first-child { margin-right: 0.5rem; }
+  &:last-child { margin-left: 0.5rem; }
+}
+
+
+.btn:hover .btn__down-arrow {
+  fill: $clr-primary;
+}
+
+
+// reduce hero__btn horizontal padding to compensate for svg space
+.hero__btn {
+  padding-left: 54px;
+  padding-right: 54px;
+}

@@ -137,7 +137,7 @@
     }
 
 
-    & .main-nav__link {
+    & a {
       color: $clr-font-mid;
       font-size: 1rem;
       padding-top: 0.25rem;
@@ -162,4 +162,17 @@
       height: 2px;
       transition: $transition;
   }
+}
+
+
+
+//
+// Large screens 
+// ==========================================================================
+@media (min-width: $bp-large) {
+
+    .nav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
 }
