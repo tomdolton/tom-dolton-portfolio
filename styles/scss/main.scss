@@ -26,9 +26,12 @@
 
 // 5. Layout-related sections
 @import
+  'layout/layout-main',
   'layout/nav',
   'layout/hero',
+  'layout/header',
   'layout/about',
+  'layout/project',
   'layout/contact',
   'layout/footer';
 

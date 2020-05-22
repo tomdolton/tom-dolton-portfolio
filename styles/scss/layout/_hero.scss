@@ -1,25 +1,10 @@
 // -----------------------------------------------------------------------------
-// Hero styles & layout
+// Hero styles & layout (home page)
 // -----------------------------------------------------------------------------
-
-.hero, .about {
-  padding-bottom: 4rem;
-  border-bottom: 2px solid $clr-light-grey;
-  margin-bottom: 4rem;
-
-  @media (min-width: $bp-medium) {
-    padding-bottom: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  @media (min-width: $bp-large) {
-    padding-bottom: 6rem;
-    margin-bottom: 6rem;
-  }
-}
 
 .hero {
   position: relative;
+  padding-top: 0;
 }
 
 .hero__image {
@@ -56,7 +41,7 @@
 
     position: absolute;
     left: 0;
-    bottom: 6rem;
+    bottom: 7rem;
 
     max-width: 567px;
     padding: 1.5rem 1.5rem 0 0;

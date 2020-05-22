@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 
 .contact {
-  padding-bottom: 3rem;
   position: relative;
 }
 
@@ -26,7 +25,6 @@
 
   .contact {
     @include flex;
-    padding-bottom: 5rem;
   }
 
 
@@ -38,7 +36,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 30px;
+    top: 6.75rem;
     bottom: 0;
   }
 }
@@ -50,10 +48,9 @@
 
 @media (min-width: $bp-large) {
 
-    .contact {
-      padding-bottom: 6rem;
+    .contact__title::after {
+      top: 7.75rem;
     }
-
 }
 
 

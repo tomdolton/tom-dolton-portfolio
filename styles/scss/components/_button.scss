@@ -17,6 +17,7 @@
   color: $clr-white;
   border-radius: 1px;
   box-shadow: $bs-main;
+  cursor: pointer;
   
   // Size
   border: 2px $clr-primary solid;
@@ -24,6 +25,8 @@
  
   
   // Text
+  font-family: $ff-primary;
+  font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1.05px;
@@ -31,7 +34,7 @@
   text-align: center;
 
   transition: color $transition,
-              background-color $transition;
+  background-color $transition;
 
   &:hover,
   &:active {

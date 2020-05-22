@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// Header styles & layout
+// -----------------------------------------------------------------------------
+
+.header {
+  max-width: 220px;
+  margin: 0 auto;
+  border-bottom: 2px solid $clr-light-grey;
+  padding-bottom: 3rem;
+}
+
+
+.header__title {
+  margin-bottom: 1rem;
+}
+
+
+.header__text {
+  line-height: 23px;
+}
+
+
+@media (min-width: $bp-medium) {
+
+  .header {
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: $bp-large) {
+
+  .header {
+    text-align: left;
+    max-width: none;
+  }
+}
