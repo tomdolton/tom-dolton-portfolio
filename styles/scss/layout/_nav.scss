@@ -6,7 +6,6 @@
 .nav {
   @include flex;
 
-  position: relative;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -75,7 +74,7 @@
 
 // Modal background
 .modal {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9) ) ;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.95) ) ;
   opacity: 0;
 
   z-index: -999;
