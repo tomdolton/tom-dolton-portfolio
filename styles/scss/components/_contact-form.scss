@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// Contact form component
+// -----------------------------------------------------------------------------
+
+.contact-form {
+  margin: 4rem auto;
+  max-width: 330px;
+}
+
+
+.contact-form__field {
+  max-width: 330px;
+  margin-bottom: 1rem;
+}
+
+
+.contact-form__label {
+  font-size: 0.8rem;
+  text-align: left;
+  display: block;
+}
+
+
+.contact-form__input {
+  color: $clr-font-mid;
+  display: block;
+  border: 1px solid $clr-light-grey;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+
+.contact-form__field--message .contact-form__input {
+  height: 12rem;
+  margin-bottom: 2rem;
+}
+
+
+//
+// Medium screens
+// ==========================================================================
+
+@media (min-width: $bp-medium) {
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    align-content: space-evenly;
+  }
+
+
+  .contact-form__field--message,
+  .contact-form__btn {
+    grid-column: span 2;
+  }
+
+  
+  .contact-form__btn {
+    justify-self: center;
+  }
+
+
+  .contact-form__field {
+    width: 330px;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .contact-form__field:nth-child(2) {
+    justify-self: end;
+  }
+
+
+  .contact-form__field--message .contact-form__input {
+    height: 10rem;
+  }
+}
+
+
+//
+// Large screens
+// ==========================================================================
+
+@media (min-width: $bp-large) {
+
+  .contact-form__btn {
+    justify-self: start;
+  }
+}
