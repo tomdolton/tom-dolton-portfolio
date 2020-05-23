@@ -3,6 +3,13 @@
 // -----------------------------------------------------------------------------
 
 
+//  Enables sticky footer
+.footer,
+.push {
+  // height: 81px;
+}
+
+
 .footer {
   background: $clr-black-blue;
   padding-top: 3rem;

@@ -27,7 +27,7 @@
 
   <div class="modal"></div>
 
-  <div class="container">
+  <div class="container wrapper">
 
     <nav class="nav">
       <a class="logo-link" href="index.html">
@@ -51,7 +51,8 @@
       <p class="header__text">Want to collaborate or need a frontend developer?</p>
     </header>
 
-    <form class="contact-form" method="POST" action="https://api.slapform.com/trmdolton@gmail.com">
+    <form class="contact-form" method="POST"
+      action="https://api.slapform.com/?slap_email=trmdolton@gmail.com?slap_redirect=index.html">
       <div class="contact-form__field">
         <label class="contact-form__label" for="name">Name</label>
         <input class="contact-form__input" type="text" name="name" id="name">
@@ -64,11 +65,12 @@
         <label class="contact-form__label" for="message">Message</label>
         <textarea class="contact-form__input" type="text" name="message" id="message"></textarea>
       </div>
-      <!-- <input type="text" class="hidden" name="slap_honey" hidden="hidden"> -->
+      <input type="text" class="hidden" name="slap_honey" hidden="hidden">
       <button type="submit" class="btn contact-form__btn">Submit</button>
 
     </form>
 
+    <div class="push"></div>
   </div>
   <!-- container end -->
 

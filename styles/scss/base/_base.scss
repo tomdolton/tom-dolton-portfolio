@@ -22,6 +22,15 @@ html {
 }
 
 /**
+ * Enables sticky footer
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/**
  * Reset default padding and margin on block elements
  */
  h1, h2, h3, h4, p, ul, li {
