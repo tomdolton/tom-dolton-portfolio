@@ -2,13 +2,9 @@
 // Footer styles & layout
 // -----------------------------------------------------------------------------
 
-
-//  Enables sticky footer
-.footer,
-.push {
-  // height: 81px;
-}
-
+//
+// Mobile footer layout & styles
+// ==========================================================================
 
 .footer {
   background: $clr-black-blue;
@@ -101,5 +97,36 @@
   .github-icon {
     width: 35px;
     height: 35px;
+  }
+}
+
+
+//
+// Sticky footer set up
+// ==========================================================================
+
+// 1. Height of footer
+.footer,
+.push {
+  height: 366.5px; // 1 //
+}
+
+
+ .wrapper {
+  min-height: 100%;
+  margin-bottom: -366.5px; // 1 //
+}
+
+
+@media (min-width: $bp-medium) {
+
+  .footer,
+  .push {
+    height: 81px; // 1 //
+  }
+
+
+  .wrapper {
+    margin-bottom: -81px; // 1 //
   }
 }
