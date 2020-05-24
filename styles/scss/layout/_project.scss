@@ -7,7 +7,8 @@
 }
 
 
-.project__textbox {
+.project__title,
+.project__copy {
   text-align: left;
 }
 
@@ -46,13 +47,25 @@
 }
 
 
+//
+// Medium screens
+// ==========================================================================
+
 @media (min-width: $bp-medium) {
+
+  .project__textbox {
+    text-align: left;
+  }
 
   .project__image {
     margin-bottom: 3rem;
   }
 }
 
+
+//
+// Large screens
+// ==========================================================================
 
 @media (min-width: $bp-large) {
 
