@@ -1,153 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-167482393-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167482393-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag('config', 'UA-167482393-1');
+    </script>
 
-    gtag('config', 'UA-167482393-1');
-  </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Dolton Web Developer</title>
+    <meta
+      name="description"
+      content="Tom Dolton is a web developer. He builds fast, responsive and accessible websites using modern HTML, CSS, Javascript and PHP. See his portfolio here."
+    />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tom Dolton Frontend Web Developer</title>
-  <meta name="description"
-    content="Tom Dolton is a frontend web developer. He builds fast, responsive and accessible websites using modern HTML, CSS, and Javascript. See his portfolio here.">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta
+      name="msapplication-config"
+      content="/images/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/images/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/css/main.min.css" />
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Bitter&family=PT+Sans:wght@400;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/css/main.min.css">
-</head>
+  <body>
+    <div class="modal"></div>
 
-<body>
+    <div class="container wrapper">
+      <nav class="nav">
+        <a class="logo-link" href="index.html">
+          <span class="visually-hidden">Tom Dolton Web Developer</span>
+          <svg
+            class="logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="290.98"
+            height="252"
+            viewBox="0 0 290.98 252"
+          >
+            <path
+              d="M256.02 60.57L290.98 0H149.97zM109.75 190.09L145.49 252l72.08-124.84zM74.33 0H0l74.94 129.79zM241.36 85.24L96.22 166.58 98.27.08z"
+            />
+          </svg>
+        </a>
+        <ul class="nav__main-nav main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button type="button" class="nav__hamburger">
+          <span class="visually-hidden">Main menu</span>
+        </button>
+      </nav>
+      <!-- nav end -->
 
-  <div class="modal"></div>
+      <main>
+        <header class="hero">
+          <picture class="about__image-container">
+            <source
+              media="(min-width: 768px)"
+              type="image/webp"
+              srcset="images/laptop-large.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              type="image/jpeg"
+              srcset="images/laptop-large.jpg"
+            />
+            <source type="image/webp" srcset="images/laptop-small.webp" />
+            <source type="image/jpeg" srcset="images/laptop-small.jpg" />
+            <img
+              src="images/home-laptop.jpg"
+              alt="A laptop computer showing a page of code."
+              class="hero__image"
+            />
+          </picture>
+          <div class="hero__textbox">
+            <h1 class="hero__title">
+              Hi, I'm Tom Dolton. Welcome to my portfolio
+            </h1>
+            <a href="#about" class="btn hero__btn">
+              <svg
+                class="btn__down-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 490.656 490.656"
+              >
+                <path
+                  d="M487.536 216.467c-4.16-4.16-10.923-4.16-15.083 0L245.339 443.581 18.203 216.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.115L487.537 231.55c4.159-4.161 4.159-10.923-.001-15.083z"
+                />
+                <path
+                  d="M487.536 24.445c-4.16-4.16-10.923-4.16-15.083 0L245.339 251.581 18.203 24.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.136L487.536 39.528c4.16-4.16 4.16-10.923 0-15.083z"
+                />
+              </svg>
+              About Me
+              <svg
+                class="btn__down-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 490.656 490.656"
+              >
+                <path
+                  d="M487.536 216.467c-4.16-4.16-10.923-4.16-15.083 0L245.339 443.581 18.203 216.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.115L487.537 231.55c4.159-4.161 4.159-10.923-.001-15.083z"
+                />
+                <path
+                  d="M487.536 24.445c-4.16-4.16-10.923-4.16-15.083 0L245.339 251.581 18.203 24.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.136L487.536 39.528c4.16-4.16 4.16-10.923 0-15.083z"
+                />
+              </svg>
+            </a>
+          </div>
+        </header>
+        <!-- hero end -->
 
-  <div class="container wrapper">
+        <section class="about" id="about">
+          <picture>
+            <source type="image/webp" srcset="images/tomdolton.webp" />
+            <source type="image/jpeg" srcset="images/tomdolton.jpg" />
+            <img
+              src="images/tomdolton.jpg"
+              alt="Tom Dolton."
+              class="about__image"
+            />
+          </picture>
+          <div class="about__textbox">
+            <h2 class="about__title">About Me</h2>
+            <p class="about__copy">
+              I’m a junior web developer looking for a role in an exciting
+              company. I focus on creating accessible, responsive websites using
+              modern HTML, CSS, Javascript and PHP practices. I often use React
+              when writing Javascript, but can adapt to whatever tools are
+              required.
+            </p>
+            <p class="about__copy">
+              I’m based in Suffolk, UK, but I am happy to work remotely. When
+              I’m not coding, I enjoy playing music and getting outdoors. Feel
+              free to check out my work.
+            </p>
+            <a href="portfolio.html" class="btn btn--secondary"
+              >View Portfolio</a
+            >
+          </div>
+        </section>
+        <!-- about end -->
+      </main>
+      <!-- main end -->
 
-    <nav class="nav">
-      <a class="logo-link" href="index.html">
-        <span class="visually-hidden">Tom Dolton Frontend Developer</span>
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="290.98" height="252" viewBox="0 0 290.98 252">
-          <path
-            d="M256.02 60.57L290.98 0H149.97zM109.75 190.09L145.49 252l72.08-124.84zM74.33 0H0l74.94 129.79zM241.36 85.24L96.22 166.58 98.27.08z" />
-        </svg>
-      </a>
-      <ul class="nav__main-nav main-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button type="button" class="nav__hamburger"><span class="visually-hidden">Main menu</span></button>
-    </nav>
-    <!-- nav end -->
-
-    <main>
-      <header class="hero">
-        <picture class="about__image-container">
-          <source media="(min-width: 768px)" type="image/webp" srcset="images/laptop-large.webp">
-          <source media="(min-width: 768px)" type="image/jpeg" srcset="images/laptop-large.jpg">
-          <source type="image/webp" srcset="images/laptop-small.webp">
-          <source type="image/jpeg" srcset="images/laptop-small.jpg">
-          <img src="images/home-laptop.jpg" alt="A laptop computer showing a page of code." class="hero__image">
-        </picture>
-        <div class="hero__textbox">
-          <h1 class="hero__title">Hi, I'm Tom Dolton. Welcome to my portfolio</h1>
-          <a href="#about" class="btn hero__btn">
-            <svg class="btn__down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656">
-              <path
-                d="M487.536 216.467c-4.16-4.16-10.923-4.16-15.083 0L245.339 443.581 18.203 216.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.115L487.537 231.55c4.159-4.161 4.159-10.923-.001-15.083z" />
-              <path
-                d="M487.536 24.445c-4.16-4.16-10.923-4.16-15.083 0L245.339 251.581 18.203 24.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.136L487.536 39.528c4.16-4.16 4.16-10.923 0-15.083z" />
-            </svg>
-            About Me
-            <svg class="btn__down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.656 490.656">
-              <path
-                d="M487.536 216.467c-4.16-4.16-10.923-4.16-15.083 0L245.339 443.581 18.203 216.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.115L487.537 231.55c4.159-4.161 4.159-10.923-.001-15.083z" />
-              <path
-                d="M487.536 24.445c-4.16-4.16-10.923-4.16-15.083 0L245.339 251.581 18.203 24.467c-4.16-4.16-10.923-4.16-15.083 0s-4.16 10.923 0 15.083l234.667 234.667c2.091 2.069 4.821 3.115 7.552 3.115s5.461-1.045 7.531-3.136L487.536 39.528c4.16-4.16 4.16-10.923 0-15.083z" />
-            </svg>
-          </a>
-        </div>
-      </header>
-      <!-- hero end -->
-
-      <section class="about" id="about">
-        <picture>
-          <source type="image/webp" srcset="images/tomdolton.webp">
-          <source type="image/jpeg" srcset="images/tomdolton.jpg">
-          <img src="images/tomdolton.jpg" alt="Tom Dolton." class="about__image">
-        </picture>
-        <div class="about__textbox">
-          <h2 class="about__title">About Me</h2>
-          <p class="about__copy">
-            I’m a junior front-end developer looking for a role in an exciting company. I focus on creating accessible,
-            responsive websites using modern HTML, CSS, and Javascript practices. I often use React when writing
-            Javascript, but can adapt to whatever tools are required.
-          </p>
-          <p class="about__copy">
-            I’m based in Suffolk, UK, but I am happy to work remotely.
-            When I’m not coding, I enjoy playing music and getting outdoors. Feel free to check out my work.
-          </p>
-          <a href="portfolio.html" class="btn btn--secondary">View Portfolio</a>
-        </div>
+      <section class="contact">
+        <h2 class="contact__title">Get in touch</h2>
+        <a href="contact.html" class="btn btn--secondary">Contact Me</a>
       </section>
-      <!-- about end -->
+      <!-- contact end -->
 
-    </main>
-    <!-- main end -->
-
-    <section class="contact">
-      <h2 class="contact__title">Get in touch</h2>
-      <a href="contact.html" class="btn btn--secondary">Contact Me</a>
-    </section>
-    <!-- contact end -->
-
-    <div class="push"></div>
-  </div>
-  <!-- container & wrapper end -->
-
-  <footer class="footer">
-    <div class="container">
-      <a href="index.html" class="logo-link footer__logo-link">
-        <span class="visually-hidden">Tom Dolton Frontend Developer</span>
-        <svg class="logo logo--white footer__logo" xmlns="http://www.w3.org/2000/svg" width="290.98" height="252"
-          viewBox="0 0 290.98 252">
-          <path
-            d="M256.02 60.57L290.98 0H149.97zM109.75 190.09L145.49 252l72.08-124.84zM74.33 0H0l74.94 129.79zM241.36 85.24L96.22 166.58 98.27.08z" />
-        </svg>
-      </a>
-      <ul class="footer__main-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <a href="https://github.com/tomdolton" class="footer__social">
-        <span class="visually-hidden">Github</span>
-        <svg class="github-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="m256 0c-140.609375 0-256 115.390625-256 256 0 119.988281 84.195312 228.984375 196 256v-84.695312c-11.078125 2.425781-21.273438 2.496093-32.550781-.828126-15.128907-4.464843-27.421875-14.542968-36.546875-29.910156-5.816406-9.8125-16.125-20.453125-26.878906-19.671875l-2.636719-29.882812c23.253906-1.992188 43.371093 14.167969 55.3125 34.230469 5.304687 8.921874 11.410156 14.152343 19.246093 16.464843 7.574219 2.230469 15.707032 1.160157 25.183594-2.1875 2.378906-18.972656 11.070313-26.074219 17.636719-36.074219v-.015624c-66.679687-9.945313-93.253906-45.320313-103.800781-73.242188-13.976563-37.074219-6.476563-83.390625 18.238281-112.660156.480469-.570313 1.347656-2.0625 1.011719-3.105469-11.332032-34.230469 2.476562-62.546875 2.984375-65.550781 13.078125 3.867187 15.203125-3.890625 56.808593 21.386718l7.191407 4.320313c3.007812 1.792969 2.0625.769531 5.070312.542969 17.371094-4.71875 35.683594-7.324219 53.726563-7.558594 18.179687.234375 36.375 2.839844 54.464844 7.75l2.328124.234375c-.203124-.03125.632813-.148437 2.035157-.984375 51.972656-31.480469 50.105469-21.191406 64.042969-25.722656.503906 3.007812 14.128906 31.785156 2.917968 65.582031-1.511718 4.65625 45.058594 47.300781 19.246094 115.753906-10.546875 27.933594-37.117188 63.308594-103.796875 73.253907v.015624c8.546875 13.027344 18.816406 19.957032 18.761719 46.832032v105.722656c111.808594-27.015625 196-136.011719 196-256 .003906-140.609375-115.386719-256-255.996094-256zm0 0" />
-        </svg>
-      </a>
+      <div class="push"></div>
     </div>
-  </footer>
-  <!-- footer end -->
+    <!-- container & wrapper end -->
 
-  <script src="scripts/main.js"></script>
-</body>
+    <footer class="footer">
+      <div class="container">
+        <a href="index.html" class="logo-link footer__logo-link">
+          <span class="visually-hidden">Tom Dolton Web Developer</span>
+          <svg
+            class="logo logo--white footer__logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="290.98"
+            height="252"
+            viewBox="0 0 290.98 252"
+          >
+            <path
+              d="M256.02 60.57L290.98 0H149.97zM109.75 190.09L145.49 252l72.08-124.84zM74.33 0H0l74.94 129.79zM241.36 85.24L96.22 166.58 98.27.08z"
+            />
+          </svg>
+        </a>
+        <ul class="footer__main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="https://github.com/tomdolton" class="footer__social">
+          <span class="visually-hidden">Github</span>
+          <svg
+            class="github-icon"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m256 0c-140.609375 0-256 115.390625-256 256 0 119.988281 84.195312 228.984375 196 256v-84.695312c-11.078125 2.425781-21.273438 2.496093-32.550781-.828126-15.128907-4.464843-27.421875-14.542968-36.546875-29.910156-5.816406-9.8125-16.125-20.453125-26.878906-19.671875l-2.636719-29.882812c23.253906-1.992188 43.371093 14.167969 55.3125 34.230469 5.304687 8.921874 11.410156 14.152343 19.246093 16.464843 7.574219 2.230469 15.707032 1.160157 25.183594-2.1875 2.378906-18.972656 11.070313-26.074219 17.636719-36.074219v-.015624c-66.679687-9.945313-93.253906-45.320313-103.800781-73.242188-13.976563-37.074219-6.476563-83.390625 18.238281-112.660156.480469-.570313 1.347656-2.0625 1.011719-3.105469-11.332032-34.230469 2.476562-62.546875 2.984375-65.550781 13.078125 3.867187 15.203125-3.890625 56.808593 21.386718l7.191407 4.320313c3.007812 1.792969 2.0625.769531 5.070312.542969 17.371094-4.71875 35.683594-7.324219 53.726563-7.558594 18.179687.234375 36.375 2.839844 54.464844 7.75l2.328124.234375c-.203124-.03125.632813-.148437 2.035157-.984375 51.972656-31.480469 50.105469-21.191406 64.042969-25.722656.503906 3.007812 14.128906 31.785156 2.917968 65.582031-1.511718 4.65625 45.058594 47.300781 19.246094 115.753906-10.546875 27.933594-37.117188 63.308594-103.796875 73.253907v.015624c8.546875 13.027344 18.816406 19.957032 18.761719 46.832032v105.722656c111.808594-27.015625 196-136.011719 196-256 .003906-140.609375-115.386719-256-255.996094-256zm0 0"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+    <!-- footer end -->
 
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
